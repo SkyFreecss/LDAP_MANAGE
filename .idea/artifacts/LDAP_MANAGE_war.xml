@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="LDAP_MANAGE:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="LDAP_MANAGE.war">
+      <element id="artifact" artifact-name="LDAP_MANAGE:war exploded" />
+    </root>
+  </artifact>
+</component>
