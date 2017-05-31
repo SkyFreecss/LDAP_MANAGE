@@ -55,7 +55,7 @@
   </servlet-mapping>
 
   <welcome-file-list>
-    <welcome-file>/LdapConfig.jsp</welcome-file>
+    <welcome-file>/login.jsp</welcome-file>
   </welcome-file-list>
 
 

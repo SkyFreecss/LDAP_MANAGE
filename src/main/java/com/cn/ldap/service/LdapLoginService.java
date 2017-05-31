@@ -5,5 +5,5 @@ package com.cn.ldap.service;
  * ldap登陆接口
  */
 public interface LdapLoginService {
-        String getLoginContext(String username,String password,String LDAP_URL,String LDAP_PRINCIPAL,String LDAP_FACTORY);
+        String getLoginContext(String username,String password);
 }

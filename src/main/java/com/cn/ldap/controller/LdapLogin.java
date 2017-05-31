@@ -27,10 +27,10 @@ public class LdapLogin {
         {
                 ldap.setUsername(username);
                 ldap.setPassword(password);
-                ldap.setLDAP_PRINCIPAL("cn="+ldap.getUsername()+",dc=example,dc=com");
-                String result = ldapLoginService.getLoginContext(ldap.getUsername(),ldap.getPassword(),ldap.getLDAP_URL(),ldap.getLDAP_PRINCIPAL(),ldap.getLDAP_FACTORY());
+                ldap.setLDAP_PRINCIPAL("cn="+ldap.getUsername()/*+",dc=example,dc=com"*/);
+                String result = ldapLoginService.getLoginContext(ldap.getUsername(),ldap.getPassword());
                 if(result=="LDAP认证成功!") {
-                    return "/home";
+                    return "WEB-INF/jsp/home";
                 }
                 else {
                     return result;

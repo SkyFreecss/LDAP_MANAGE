@@ -49,21 +49,21 @@
         <div class="form-group">
             <div class="input-group">
                 <div class="input-group-addon">LDAP端口<i></i></div>
-                <input type="password" Name="Ldap_Port" class="form-control" placeholder="389">
+                <input type="text" Name="Ldap_Port" class="form-control" placeholder="389">
             </div>
         </div>
         <!--LDAP DNS-->
         <div class="form-group">
             <div class="input-group">
                 <div class="input-group-addon">LDAP DNS<i></i></div>
-                <input type="password" Name="Ldap_Dns" class="form-control" placeholder="dc=example,dc=com">
+                <input type="text" Name="Ldap_Dns" class="form-control" placeholder="dc=example,dc=com">
             </div>
         </div>
         <!--LDAP ADMIN-->
         <div class="form-group">
             <div class="input-group">
                 <div class="input-group-addon"><i class="fa fa-user fa-fw"></i></div>
-                <input type="password" Name="Ldap_Admin" class="form-control" placeholder="admin">
+                <input type="text" Name="Ldap_Admin" class="form-control" placeholder="admin">
             </div>
         </div>
         <!--LDAP ADMINPWD-->

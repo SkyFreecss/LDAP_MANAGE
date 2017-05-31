@@ -8,6 +8,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%String path=request.getContextPath();
   String basePath=request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";%>
+<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html>
 <html>
 
@@ -73,8 +74,7 @@
             <input type="password" Name="password" placeholder="密码" required="">
             <ul class="tick w3layouts agileinfo">
                 <li>
-                    <input type="checkbox" id="brand1" value="">
-                    <label for="brand1"><span></span>记住我</label>
+                    <a href=<c:url value="/goldapconfig" />>初次使用请配置LDAP</a>
                 </li>
                 <li>
                     <a href="#">忘记密码?</a>

@@ -8,5 +8,5 @@ import java.util.Map;
  */
 public interface LdapConfigService {
         void writeAndupdateProperties(String LdapConfig_IP,String ipvalue,String LdapConfig_PORT,String portvalue,String LdapConfig_BASEDNS,String dnsvalue,String LdapAdmin,String adminvalue,String LdapAdmin_PWD,String adminpwdvalue);
-        Map<String,String> getLdapPropertiesKey(String LdapConfig_IP,String LdapConfig_PORT,String LdapConfig_BASEDNS,String LdapAdmin,String LdapAdmin_PWD);
+        Map<String,String> getLdapPropertiesKey();
 }

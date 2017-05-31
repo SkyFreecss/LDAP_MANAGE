@@ -5,6 +5,7 @@ import com.cn.ldap.service.LdapConfigService;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.servlet.ModelAndView;
 
 import javax.annotation.Resource;
 
@@ -32,6 +33,13 @@ public class LdapConfig {
 
             //写入或更新ldap配置文件
             ldapConfigService.writeAndupdateProperties("LdapConfig_IP",lp.getLdapConfig_IP(),"LdapConfig_PORT",lp.getLdapConfig_PORT(),"LdapConfig_BASEDNS",lp.getLdapConfig_BASEDNS(),"LdapAdmin",lp.getLdapAdmin(),"LdapAdmin_PWD",lp.getLdapAdmin_PWD());
-            return "/login";
+            return "login";
+        }
+
+        @RequestMapping("/goldapconfig")
+        public ModelAndView goldapconfig()
+        {
+            ModelAndView view = new ModelAndView("WEB-INF/jsp/LdapConfig");
+            return view;
         }
 }

@@ -7,7 +7,7 @@ public class Ldap {
     //ldap服务器默认端口为389
     private String username;
     private String password;
-    private String LDAP_URL="ldap://192.168.0.76:389";
+    private String LDAP_URL;
     //根据此参数确认用户所在位置
     private String LDAP_PRINCIPAL;
 
@@ -16,6 +16,10 @@ public class Ldap {
 
     public String getLDAP_URL() {
         return LDAP_URL;
+    }
+
+    public void setLDAP_URL(String LDAP_URL) {
+        this.LDAP_URL = LDAP_URL;
     }
 
     public String getPassword() {
