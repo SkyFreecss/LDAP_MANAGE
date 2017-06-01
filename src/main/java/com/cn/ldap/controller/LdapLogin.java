@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import javax.annotation.Resource;
 import javax.naming.directory.DirContext;
+import java.util.logging.Logger;
 
 /**
  * Created by wejeh on 2017/5/15.
@@ -16,6 +17,7 @@ import javax.naming.directory.DirContext;
 @Controller
 public class LdapLogin {
         private static DirContext ctx;
+        private Logger logger = Logger.getLogger("LdapLogin.class");
         Ldap ldap = new Ldap();
 
 
@@ -33,6 +35,7 @@ public class LdapLogin {
                     return "WEB-INF/jsp/home";
                 }
                 else {
+                    logger.info("LDAP"+result);
                     return result;
                 }
         }

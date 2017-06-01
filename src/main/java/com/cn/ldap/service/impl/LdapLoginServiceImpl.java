@@ -41,14 +41,17 @@ public class LdapLoginServiceImpl implements LdapLoginService {
 
             try {
                 ctx = new InitialDirContext(ht);
+                logger.info("LDAP认证成功！");
+                return "LDAP认证成功!";
             }catch(NamingException e)
             {
+                logger.info("LDAP认证失败！");
                 return "认证失败！";
             }catch (Exception e)
             {
+                logger.info("LDAP认证出错！");
                 return "认证出错！";
             }
 
-            return "LDAP认证成功!";
         }
 }
